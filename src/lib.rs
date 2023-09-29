@@ -1,5 +1,5 @@
 #[no_mangle]
-pub extern fn add(left: usize, right: usize) -> usize {
+pub extern "C" fn add(left: usize, right: usize) -> usize {
     println!("OMG! We are now executing some cool function in a SYSTEM LIBRARY written using Rust");
     left + right
 }
